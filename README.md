@@ -4,7 +4,10 @@ Copyright &copy; Erik Ramfelt, Olivier Dagenais, CloudBees, Inc. and others.
 Licensed under [MIT Licence].
  
 ## Summary
-This plugin triggers a release in Azure DevOps, through a post-build step in Jenkins.  It also integrates [Team Foundation Version Control] (also known as TFVC) and Git to Jenkins by connecting to Team Foundation Server (TFS). 
+This plugin triggers a release in Azure DevOps, through a post-build step in Jenkins.  It also integrates [Team Foundation Version Control] (also known as TFVC) and Git to Jenkins by connecting to Team Foundation Server (TFS).
+
+* Plugin fixes issue with missing  org.apache.commons.digester.Digester java class.
+* Plugin installs from https://github.com/r3tec/tfs-plugin/blob/master/dist/tfs.hpi
 
 ## Quick links
 * The legacy [wiki] page on the Jenkins Confluence instance
