@@ -29,6 +29,9 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
         
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
@@ -37,7 +40,5 @@ jobs:
           .
           !dist/**/*.md
             
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
 
  
